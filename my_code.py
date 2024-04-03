@@ -15,3 +15,14 @@ def test_fix_phone_num():
   assert fix_phone_num("5554429876") == '(555) 442 9876'
   assert fix_phone_num("3216543333") == '(321) 654 3333'
   
+def fix_phone_num2(phone_num_to_fix):
+  area_code = phone_num_to_fix[0:3] 
+  three_part = phone_num_to_fix[3:6] 
+  four_part = phone_num_to_fix[6:]
+  
+  fixed_num = "(" + area_code + ")" + " " + three_part + " " + four_part 
+  
+  return fixed_num
+
+def test_phone_num2():
+    assert fix_phone_num("5554429876") == '(555) 442 9876'
