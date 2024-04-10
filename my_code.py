@@ -42,3 +42,6 @@ def test_fix_phone_num3
     assert fix_phone_num("3216543333") == '(321) 654 3333'
     if (len(phone_num_to_fix) != 10):
     raise ValueError
+
+def test_fail
+  assert False
