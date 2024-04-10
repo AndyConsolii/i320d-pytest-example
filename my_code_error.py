@@ -15,7 +15,7 @@ def fix_phone_num(phone_num_to_fix):
   return fixed_num
 
 def test_fix_phone_num():
-  assert fix_phone_num("5125558823") == '(512) 555 8823'
+  assert fix_phone_num("5125558833") == '(512) 555 8823'
   
   # Now check that a too short string gives a ValueError
   with pytest.raises(ValueError):
