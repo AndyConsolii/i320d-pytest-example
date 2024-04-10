@@ -43,5 +43,5 @@ def test_fix_phone_num3
     if (len(phone_num_to_fix) != 10):
     raise ValueError
 
-def test_fail
+def test_fail1
   assert False
